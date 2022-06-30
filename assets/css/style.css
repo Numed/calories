@@ -1,0 +1,518 @@
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  margin: 0;
+  letter-spacing: 0.1em;
+  line-height: 1.6em;
+  font-size: 15px;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+input[type="text"] {
+  outline: none;
+  border: none;
+  border: 2px solid #000;
+  padding: 8px 15px;
+}
+
+/* Intro  */
+.intro {
+  justify-content: center;
+  width: 100%;
+  height: 145vh;
+
+  background: url("../img/intro.png") center no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+  text-align: center;
+}
+
+.logo_text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro h1 {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 30px;
+  line-height: 1.6em;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 10px;
+}
+
+.intro_table {
+  margin: 0 auto;
+  width: 550px;
+  height: 675px;
+  background-color: #fff;
+  border-radius: 40px 40px;
+}
+
+.intro_table h1 {
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+  color: #000;
+  text-transform: none;
+  height: auto;
+  padding-left: 35px;
+}
+
+.btn_male,
+.btn_female {
+  display: inline-block;
+  vertical-align: top;
+  padding: 8px 90px;
+  border: 3px solid orange;
+  color: #000;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background-color 0.1s linear, color 0.1s linear;
+}
+.btn_male:hover,
+.btn_male:active,
+.btn_female:hover,
+.btn_female:active {
+  background-color: #ffa500;
+  transition: background-color 0.1s linear, color 0.1s linear;
+  color: #fff;
+}
+.btn_male:focus,
+.btn_female:focus {
+  background-color: #ffa500;
+  color: #fff;
+}
+
+.btn-active {
+  background-color: #ffa500;
+  transition: background-color 0.1s linear, color 0.1s linear;
+  color: #fff;
+}
+
+/* Stats */
+
+.stats {
+  padding-top: 10px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.stats h1,
+.title_age,
+.title_height,
+.title_weight {
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 5px 5px;
+  color: #000;
+  padding: 0px 55px 0px 35px;
+}
+
+/* Text Holder */
+
+.text_holder {
+  display: inline;
+  justify-content: space-between;
+  padding: 8px 15px;
+  margin: 0px 55px 0px 45px;
+  float: left;
+}
+
+.text_holder_lc:last-child {
+  display: inline;
+  justify-content: space-between;
+  padding: 8px 15px;
+  margin: 0px 55px 0px 35px;
+  float: left;
+}
+
+.text_holder:focus {
+  border: 2px solid orange;
+  transition: border 0.2s linear;
+}
+
+.text_holder:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.text_holder_lc:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.text_holder_lc:focus {
+  border: 2px solid orange;
+  transition: border 0.2s linear;
+}
+
+/* Physical Activity */
+.physical_activity {
+  width: 100%;
+}
+
+.physical_activity h1 {
+  padding-top: 20px;
+  float: left;
+  align-items: center;
+}
+
+.physical_inner {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.physical_inner h1 {
+  font-size: 20px;
+  color: #000;
+  font-weight: 600;
+}
+
+.physical_activity .title {
+  padding-top: 20px;
+  padding-bottom: 0;
+}
+
+.physical_title {
+  width: 100%;
+}
+
+.physical_subtitle h3 {
+  float: left;
+  font-size: 16px;
+  color: grey;
+  padding: 0px 0px 0px 60px;
+}
+
+.physical_subtitle {
+  width: 100%;
+}
+
+input[type="radio"]:checked::after {
+  width: 11px;
+  height: 11px;
+  border-radius: 15px;
+  position: relative;
+  background-color: orange;
+  content: "";
+  display: inline-block;
+  visibility: visible;
+  border: 1px solid #fff;
+}
+
+input#radio_buttons {
+  padding-right: 10px;
+  margin-right: 10px;
+}
+
+/* Buttons Finish */
+
+.buttons_finish {
+  width: 550px;
+  height: 100px;
+  padding: 20px 0px 0px 0px;
+}
+
+.btn_calculate {
+  float: left;
+  margin: 20px 0px 0px 35px;
+  display: inline;
+  padding: 5px 15px;
+  text-decoration: none;
+  background-color: #d9d9d9;
+  border: 3px solid #d9d9d9;
+  color: #fff;
+}
+
+.icon {
+  padding: 0px 10px 0px 0px;
+}
+
+.btn_clear {
+  float: right;
+  color: orangered;
+  padding: 29px 35px 0px 10px;
+  text-align: center;
+  font-size: 20px;
+  background-color: #fff;
+  text-decoration: none;
+}
+
+.result {
+  padding: 30px 35px;
+  margin: 16px auto;
+  width: 500px;
+  height: 120px;
+  background-color: #fff;
+  border-radius: 40px 40px;
+}
+
+.result h1 {
+  color: orange;
+  font-weight: 700;
+  font-size: 30px;
+  text-align: left;
+  text-transform: none;
+  padding: 0px 0px 20px 0px;
+}
+
+.result_title {
+  display: flex;
+  justify-content: space-around;
+  color: #000;
+  font-size: 15px;
+}
+
+.result_title h2:first-child {
+  padding: 0px 10px 0px 15px;
+  text-align: center;
+}
+
+.result_title h2 {
+  padding: 0px 0px 0px 80px;
+}
+
+.result_title h2:hover {
+  color: orange;
+  transition: color linear 0.25s;
+}
+
+.result_title h2:last-child {
+  padding: 0px 20px 0px 80px;
+  text-align: center;
+}
+
+.result_subtitle {
+  display: flex;
+  justify-content: space-between;
+}
+
+.result_subtitle h3 {
+  color: grey;
+  font-size: 15px;
+  float: left;
+}
+
+/* Adaptive */
+
+@media (max-width: 770px) {
+  .intro {
+    font-size: 25px;
+    overflow-x: hidden;
+  }
+  .intro_table h1 {
+    font-size: 21px;
+  }
+
+  .intro_table {
+    width: 500px;
+    height: 640px;
+  }
+
+  .btn_male {
+    padding: 8px 70px;
+    margin-bottom: 10px;
+  }
+  .btn_female {
+    padding: 8px 80px;
+  }
+
+  .stats h1,
+  .title_age,
+  .title_height,
+  .title_weight {
+    width: 0;
+  }
+
+  .stats > .title_weight {
+    justify-content: center;
+    width: 22px;
+  }
+
+  .physical_inner {
+    width: 350px;
+  }
+
+  .physical_subtitle h3 {
+    font-size: 18px;
+    padding-left: 0;
+    width: 455px;
+  }
+
+  .first_action {
+    padding-left: 30px !important;
+  }
+
+  .btn_calculate {
+    margin-left: 25px;
+    padding: 5px 15px;
+    font-size: 15px;
+  }
+
+  .icon {
+    padding: 0 5px 0 0;
+  }
+
+  .btn_clear {
+    background-color: transparent;
+    font-size: 18px;
+    margin-right: 40px;
+  }
+
+  .result {
+    padding: 30px 35px;
+    margin: 16px auto;
+    width: 450px;
+    height: 120px;
+  }
+
+  .result_title h2 {
+    padding: 0 23px 0 25px;
+  }
+
+  .result_title h2:first-child {
+    padding: 0 10px 0 17px;
+  }
+
+  .result_title h2:last-child {
+    padding: 0 20px 0 25px;
+  }
+
+  .result_subtitle h3 {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 575px) {
+  .intro {
+    font-size: 25px;
+    overflow-x: hidden;
+  }
+
+  .intro_table h1 {
+    font-size: 18px;
+  }
+
+  .intro_table {
+    width: 290px;
+    height: 700px;
+  }
+
+  .btn_male {
+    padding: 8px 70px;
+    margin-bottom: 10px;
+  }
+  .btn_female {
+    padding: 8px 80px;
+  }
+
+  .stats {
+    justify-content: end;
+  }
+
+  .stats h1,
+  .title_age,
+  .title_height,
+  .title_weight {
+    width: 0;
+  }
+
+  .title_age {
+    padding: 0;
+  }
+
+  .stats > .title_height {
+    padding-left: 20px;
+  }
+
+  .stats > .title_weight {
+    justify-content: center;
+  }
+
+  .text_holder {
+    margin: 0;
+    float: none;
+  }
+
+  .text_holder_lc h1 :last-child {
+    margin: 0;
+    float: center;
+  }
+
+  .physical_inner {
+    width: 350px;
+  }
+
+  .physical_subtitle h3 {
+    font-size: 14px;
+    padding-left: 20px;
+    width: 260px;
+  }
+
+  .btn_calculate {
+    margin-left: 25px;
+    padding: 2px 1px;
+    font-size: 15px;
+  }
+
+  .icon {
+    padding: 0 5px 0 0;
+  }
+
+  .btn_clear {
+    padding-top: 10px;
+    margin-right: 240px;
+    width: 110px;
+    background-color: transparent;
+    font-size: 15px;
+  }
+
+  .result {
+    padding: 10px 15px;
+    margin: 16px auto;
+    width: 270px;
+    height: 165px;
+  }
+
+  .result h1 {
+    width: 320px;
+    font-weight: 300;
+    font-size: 25px;
+  }
+
+  .result_title {
+    font-size: 13px;
+  }
+
+  .result_title h2 {
+    padding: 0 23px 0 35px;
+  }
+
+  .result_title h2:first-child {
+    padding: 0 10px 0 20px;
+  }
+
+  .result_title h2:last-child {
+    padding: 0 20px 0 25px;
+  }
+
+  .result_subtitle h3 {
+    width: 35%;
+  }
+}

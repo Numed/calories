@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calories</title>
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="shortcut icon" href="assets/img/logo.png" type="assets/img/png">
+    </head>
+
+    <body>
+        <div class="intro">
+            <h1 class="logo_text">Лічильник калорій</h1>
+            <div class="intro_table">
+                <h1>Стать</h1>
+                <a href="#" id="btn_choose_male" class="btn_male">Чоловік</a>
+                <a href="#" id="btn_choose_female" class="btn_female">Жінка</a>
+                <div class="stats">
+                    <h1 class="title_age">Вік</h1>
+                    <h1 class="title_height">Ріст</h1>
+                    <h1 class="title_weight">Вага</h1>
+                </div>
+
+                <input class="text_holder" id="age" type="text" size="2" maxlength="2" pattern="[0-9]{2}"
+                    placeholder="0"></input>
+                <input class="text_holder" id="height" type="text" size="3" maxlength="3" pattern="[0-9]{3}"
+                    placeholder="0"></input>
+                <input class="text_holder_lc" id="weight" type="text" size="3" maxlength="3" pattern="[0-9]{3}"
+                    placeholder="0"></input>
+
+                <div class="physical_activity">
+                    <h1 class="title">Фізична активність</h1>
+                    <div class="physical_inner">
+                        <h1><input type="radio" name="radio_btn" id="radio_buttons" checked>Низька</h1>
+                        <div class="physical_title">
+                        </div>
+                        <div class="physical_subtitle">
+                            <h3 class="first_action">Рідкі, нерегулярні, активність в побуті</h3>
+                        </div>
+                    </div>
+
+                    <div class="physical_inner">
+                        <h1><input type="radio" name="radio_btn" id="radio_buttons">Середня</h1>
+                        <div class="physical_title">
+                        </div>
+                        <div class="physical_subtitle">
+                            <h3>Тренуєтесь 2-3 разів на тиждень</h3>
+                        </div>
+                    </div>
+                    <div class="physical_inner">
+                        <h1><input type="radio" name="radio_btn" id="radio_buttons">Висока</h1>
+                        <div class="physical_title">
+                        </div>
+                        <div class="physical_subtitle">
+                            <h3>Тренуєтесь 4-6 разів на тиждень</h3>
+                        </div>
+                    </div>
+
+                    <div class="buttons_finish">
+                        <a href="#result" id="btn_calculate" class="btn_calculate">Розрахувати</a>
+                        <a href="#" id="btn_clear" class="btn_clear">
+                            <img src="assets/img/reset.png" class="icon">Очистити введені дані</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="result" id="result" hidden>
+                <h1>Ваша норма калорій</h1>
+                <div class="result_title">
+                    <h2 id="lose_weight"></h2>
+                    <h2 id="without_changes"></h2>
+                    <h2 id="gain_weight"></h2>
+                </div>
+                <div class="result_subtitle">
+                    <h3>Пониження ваги</h3>
+                    <h3>Для підтримки ваги</h3>
+                    <h3>Набування ваги</h3>
+                </div>
+            </div>
+
+        </div>
+        <script src="assets/js/main.js"></script>
+    </body>
+
+</html>
